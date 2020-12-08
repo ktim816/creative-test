@@ -1,0 +1,27 @@
+@import 'styles/utils';
+
+.user {
+  display: flex;
+  align-items: center;
+  $this: &;
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    @include size(40px);
+
+    img {
+      position: absolute;
+      @include center-block();
+    }
+  }
+
+  &__info {
+    width: 150px;
+    font-size: 13px;
+    font-weight: 500;
+    color: color('gray');
+    margin-left: 12px;
+  }
+}

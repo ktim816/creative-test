@@ -1,0 +1,14 @@
+@import 'styles/utils';
+
+$offset: 20px;
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  $this: &;
+
+  & > * {
+    margin-left: $offset;
+    margin-top: $offset;
+  }
+}

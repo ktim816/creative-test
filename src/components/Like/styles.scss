@@ -1,0 +1,19 @@
+@import 'styles/utils';
+
+.like {
+  position: relative;
+  @include size(40px);
+  background-color: color('light');
+  border-radius: 50%;
+  transition: transform $ease-main, visibility $ease-main, opacity $ease-main;
+
+  &:active {
+    transform: scale(1.1);
+  }
+
+  svg {
+    position: absolute;
+    @include size(50%);
+    @include center-block();
+  }
+}
